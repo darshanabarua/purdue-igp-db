@@ -1,4 +1,4 @@
-FROM iamdevopstrainer/tomcat:base
-COPY ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
+FROM tomcat
+COPY /ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
 EXPOSE [8080]
 CMD ["catalina.sh"]
