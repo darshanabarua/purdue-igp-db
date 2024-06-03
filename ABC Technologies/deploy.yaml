@@ -15,6 +15,6 @@ spec:
   spec:
    containers:
    -name: abc-app
-    image: darshanabarua250111/abc_tech:$BUILD_NUMBER
+    image: darshanabarua250111/abc_tech:latest
     ports:
     - containerPort: 8080
