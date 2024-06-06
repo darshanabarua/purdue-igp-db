@@ -1,12 +1,13 @@
-apiVersion:v1
+apiVersion: v1
 kind: Service
 metadata:
- name: abc-nodeport-svc
+  name: abc-nodeport-svc
 spec:
   selector:
     app: abc_deploy
   ports:
-    -portocol: TCP
-     port: 80
-     targetPort: 8080
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
   type: NodePort
+
